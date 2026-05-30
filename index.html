@@ -3341,21 +3341,42 @@ Please contact me to share custom premium illustrations and details. Thank you!`
 
 
 
-        // --- 8. LEAD FORM HANDLER & REAL-TIME INTERACTION ---
-        function handleFormSubmit(e) {
+        async function handleFormSubmit(e) {
             e.preventDefault();
             const submitBtn = e.target.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
 
             // Premium Submission Button State Change
             submitBtn.disabled = true;
-            submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Directing secure upload...`;
+            submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Dispatched secure upload...`;
 
-            setTimeout(() => {
-                document.getElementById('formSuccessModal').classList.add('active');
+            const formData = new FormData();
+            formData.append("access_key", "2694b7fd-3c89-4496-81fb-07063c70bc2b");
+            formData.append("name", document.getElementById('formName').value);
+            formData.append("email", document.getElementById('formEmail').value);
+            formData.append("phone", document.getElementById('formPhone').value);
+            formData.append("message", document.getElementById('formMessage').value);
+            formData.append("subject", "New Financial Projection Request");
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    document.getElementById('formSuccessModal').classList.add('active');
+                } else {
+                    alert("Something went wrong. Please try again: " + result.message);
+                }
+            } catch (error) {
+                console.error("Submission error:", error);
+                alert("Unable to send message. Please check your internet connection and try again.");
+            } finally {
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
-            }, 1500);
+            }
         }
 
         function resetContactForm() {
