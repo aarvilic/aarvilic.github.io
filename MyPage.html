@@ -1,0 +1,3401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Secure your future with Venkatesh Rapolu, Chief Life Insurance Advisor at LIC India. With 27+ years of experience in custom income protection, child education plans, retirement, and health policies.">
+    <title>Venkatesh Rapolu | Senior LIC Insurance Advisor & Chief Agency Recruiter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* CSS RESET & MODERN DESIGN VARIABLES */
+        :root {
+            /* Dark Theme Base (Default) */
+            --bg-primary: #0b0f19;
+            --bg-secondary: #131c30;
+            --bg-tertiary: #1b2640;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --primary-color: #0066cc;
+            --primary-accent: #e40285;
+            /* Beautiful Original Brand Pink */
+            --gold-accent: #eab308;
+            --success-color: #10b981;
+            --star-health-color: #00cccc;
+            /* Bright Premium Teal for dark mode */
+
+            --glass-bg: rgba(19, 28, 48, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+            --transition-speed: 0.3s;
+            --border-radius: 16px;
+        }
+
+        [data-theme="light"] {
+            /* Light Theme Base */
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --primary-color: #0252e3;
+            --primary-accent: #d00174;
+            --gold-accent: #d97706;
+            --success-color: #059669;
+            --star-health-color: #008080;
+            /* Premium Medical Teal for light mode */
+
+            --glass-bg: rgba(255, 255, 255, 0.8);
+            --glass-border: rgba(15, 23, 42, 0.08);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background-color var(--transition-speed), color var(--transition-speed);
+        }
+
+        /* CUSTOM SCROLLBAR */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--bg-tertiary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-accent);
+        }
+
+        /* GLASS CARD COMMON COMPONENT */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            box-shadow: var(--glass-shadow);
+            transition: transform var(--transition-speed) ease, border-color var(--transition-speed) ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-accent);
+        }
+
+        /* SECTION UTILITIES */
+        section {
+            padding: 100px 5% 80px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 30%, var(--primary-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* BTN COMMON STYLE */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-accent) 0%, #ab0060 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(228, 2, 133, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(228, 2, 133, 0.6);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #004499 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+        }
+
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.6);
+        }
+
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+        }
+
+        .btn-glass:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--primary-accent);
+        }
+
+        /* FLOATING NAVIGATION BAR */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(11, 15, 25, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--glass-border);
+            transition: background var(--transition-speed), border var(--transition-speed);
+        }
+
+        [data-theme="light"] header {
+            background: rgba(248, 250, 252, 0.6);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 5%;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, var(--gold-accent), var(--primary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color var(--transition-speed);
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-accent);
+            transition: width var(--transition-speed);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* TOGGLE MODE BUTTON */
+        .theme-switch-btn {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background var(--transition-speed);
+            border: 1px solid var(--glass-border);
+        }
+
+        .theme-switch-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--gold-accent);
+        }
+
+        [data-theme="light"] .theme-switch-btn:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        /* MODERN HERO CAROUSEL */
+        .hero-carousel {
+            margin-top: 80px;
+            position: relative;
+            height: 520px;
+            width: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.85;
+            filter: brightness(0.65);
+            transition: scale 6s ease;
+        }
+
+        .carousel-slide.active img {
+            scale: 1.08;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(11, 15, 25, 0.9) 0%, rgba(11, 15, 25, 0.2) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 50px 10%;
+        }
+
+        [data-theme="light"] .carousel-overlay {
+            background: linear-gradient(0deg, rgba(248, 250, 252, 0.9) 0%, rgba(248, 250, 252, 0.1) 100%);
+        }
+
+        .carousel-content {
+            max-width: 800px;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.8s ease 0.2s;
+        }
+
+        .carousel-slide.active .carousel-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .carousel-badge {
+            display: inline-block;
+            background: var(--primary-accent);
+            color: #fff;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .carousel-content h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        [data-theme="light"] .carousel-content h2 {
+            color: var(--text-primary);
+            text-shadow: none;
+        }
+
+        .carousel-content p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 25px;
+            max-width: 650px;
+        }
+
+        [data-theme="light"] .carousel-content p {
+            color: var(--text-secondary);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all var(--transition-speed);
+        }
+
+        .carousel-btn:hover {
+            background: var(--primary-accent);
+            border-color: var(--primary-accent);
+        }
+
+        .carousel-btn-prev {
+            left: 20px;
+        }
+
+        .carousel-btn-next {
+            right: 20px;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all var(--transition-speed);
+        }
+
+        .carousel-dot.active {
+            background: var(--primary-accent);
+            width: 30px;
+            border-radius: 10px;
+        }
+
+        /* EXPERIENCE & COUNTERS SECTION */
+        .welcome-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .welcome-text h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .welcome-text p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        .ethics-quote {
+            border-left: 4px solid var(--primary-accent);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .counter-box {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .counter-box i {
+            font-size: 2.2rem;
+            color: var(--primary-accent);
+            margin-bottom: 15px;
+        }
+
+        .counter-number {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--text-primary), var(--gold-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .counter-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* POLICY SHOWCASE WITH FILTERS */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 45px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            padding: 10px 22px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all var(--transition-speed);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-accent);
+            color: #fff;
+            border-color: var(--primary-accent);
+            box-shadow: 0 4px 12px rgba(228, 2, 133, 0.3);
+        }
+
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* LIC AND STAR HEALTH PORTFOLIO SEPARATIONS */
+        .lic-portfolio-container {
+            margin-bottom: 60px;
+        }
+
+        #licGrid {
+            max-height: 720px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            background: rgba(0, 0, 0, 0.12);
+            border: 1px solid var(--glass-border);
+            scroll-behavior: smooth;
+        }
+
+        [data-theme="light"] #licGrid {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        #licGrid::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #licGrid::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        #licGrid::-webkit-scrollbar-thumb {
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+        }
+
+        #licGrid::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-accent);
+        }
+
+        .lic-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .lic-header h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--text-primary) 30%, var(--primary-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .lic-header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .star-health-section {
+            margin-top: 80px;
+            padding-top: 60px;
+            border-top: 1px solid var(--glass-border);
+            position: relative;
+        }
+
+        .star-health-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--star-health-color), transparent);
+        }
+
+        .star-health-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .star-health-header h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--text-primary) 30%, var(--star-health-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .star-health-header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .policy-card {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .policy-img-container {
+            height: 200px;
+            width: 100%;
+            position: relative;
+            background: #000;
+        }
+
+        .policy-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .policy-card:hover .policy-img-container img {
+            transform: scale(1.05);
+        }
+
+        .policy-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(11, 15, 25, 0.75);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gold-accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .policy-body {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .policy-body h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .policy-body p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .policy-bullets {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .policy-bullets li {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-bullets li i {
+            color: var(--success-color);
+        }
+
+        .policy-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--glass-border);
+            padding-top: 20px;
+        }
+
+        .policy-code {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            background: var(--bg-tertiary);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        /* SMART POLICY FINDER WIDGET */
+        .advisor-section {
+            background: linear-gradient(135deg, #0e172a 0%, #1e1b4b 100%);
+            border-radius: 24px;
+            padding: 60px 5%;
+            border: 1px solid var(--glass-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        [data-theme="light"] .advisor-section {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e0e7ff 100%);
+        }
+
+        .advisor-section::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(228, 2, 133, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .advisor-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .advisor-info h3 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .advisor-info p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+        }
+
+        .advisor-features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .advisor-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .advisor-feature-item i {
+            width: 40px;
+            height: 40px;
+            background: rgba(228, 2, 133, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-accent);
+            font-size: 1.1rem;
+        }
+
+        .advisor-card-widget {
+            padding: 40px;
+        }
+
+        .finder-step {
+            display: none;
+        }
+
+        .finder-step.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .finder-step h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .option-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .option-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            color: var(--text-primary);
+            text-align: left;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .option-btn:hover {
+            border-color: var(--primary-accent);
+            background: rgba(228, 2, 133, 0.05);
+        }
+
+        .option-btn.selected {
+            background: var(--primary-accent);
+            border-color: var(--primary-accent);
+            color: #fff;
+        }
+
+        .option-btn i {
+            opacity: 0;
+            transition: opacity var(--transition-speed);
+        }
+
+        .option-btn.selected i {
+            opacity: 1;
+        }
+
+        .step-indicators {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .step-indicator {
+            flex-grow: 1;
+            height: 4px;
+            background: var(--bg-tertiary);
+            border-radius: 2px;
+        }
+
+        .step-indicator.active {
+            background: var(--primary-accent);
+        }
+
+        .widget-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* RESULT SCREEN WIDGET */
+        .finder-result {
+            text-align: center;
+        }
+
+        .success-checkmark {
+            width: 70px;
+            height: 70px;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success-color);
+            font-size: 2.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .result-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--gold-accent);
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .result-plan-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .result-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        /* RECRUITMENT SECTION */
+        .recruit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .recruit-content h3 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .recruit-content p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+        }
+
+        .benefit-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .benefit-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+        }
+
+        .benefit-card i {
+            font-size: 1.6rem;
+            color: var(--primary-accent);
+            margin-bottom: 12px;
+        }
+
+        .benefit-card h5 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .benefit-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* ASSESSMENT QUIZ BOX */
+        .assessment-box {
+            padding: 40px;
+        }
+
+        .quiz-question {
+            margin-bottom: 25px;
+        }
+
+        .quiz-question h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .quiz-options {
+            display: flex;
+            gap: 15px;
+        }
+
+        .quiz-opt {
+            flex-grow: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text-primary);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            text-align: center;
+        }
+
+        .quiz-opt:hover {
+            border-color: var(--primary-accent);
+        }
+
+        .quiz-opt.selected {
+            background: var(--primary-accent);
+            border-color: var(--primary-accent);
+            color: #fff;
+        }
+
+        .assessment-results {
+            text-align: center;
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .score-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin: 0 auto 20px auto;
+            color: var(--text-primary);
+        }
+
+        /* CONTACT SECTION & LEAD FORM */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 50px;
+        }
+
+        .contact-info-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-method-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px;
+            border-radius: 12px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform var(--transition-speed);
+        }
+
+        .contact-method-card:hover {
+            transform: translateX(5px);
+            border-color: var(--primary-accent);
+        }
+
+        .contact-method-card i {
+            width: 48px;
+            height: 48px;
+            background: rgba(228, 2, 133, 0.1);
+            color: var(--primary-accent);
+            font-size: 1.3rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-method-details h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .contact-method-details p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-map-mock {
+            height: 180px;
+            border-radius: 12px;
+            background-color: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-map-mock i {
+            font-size: 2rem;
+            color: var(--primary-accent);
+            margin-bottom: 10px;
+        }
+
+        /* LEAD CAPTURE FORM */
+        .lead-form-card {
+            padding: 40px;
+            position: relative;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            outline: none;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all var(--transition-speed);
+        }
+
+        .form-input:focus {
+            border-color: var(--primary-accent);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px rgba(228, 2, 133, 0.15);
+        }
+
+        .form-label {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            pointer-events: none;
+            transition: all 0.25s ease;
+            font-weight: 500;
+        }
+
+        .form-input:focus~.form-label,
+        .form-input:not(:placeholder-shown)~.form-label {
+            top: 0;
+            font-size: 0.8rem;
+            background: var(--bg-secondary);
+            padding: 0 8px;
+            color: var(--primary-accent);
+            border-radius: 4px;
+            left: 15px;
+        }
+
+        textarea.form-input {
+            height: 120px;
+            resize: none;
+        }
+
+        textarea.form-input~.form-label {
+            top: 25px;
+        }
+
+        textarea.form-input:focus~.form-label,
+        textarea.form-input:not(:placeholder-shown)~.form-label {
+            top: 0;
+        }
+
+        /* CONFETTI & SUBMISSION POPUP */
+        .success-modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+            z-index: 10;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .success-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .success-modal i {
+            font-size: 3.5rem;
+            color: var(--success-color);
+            margin-bottom: 20px;
+        }
+
+        /* DYNAMIC FLOATING COMMUNICATION PANEL */
+        .floating-chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all var(--transition-speed) cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .floating-whatsapp {
+            background-color: #25d366;
+        }
+
+        .floating-telegram {
+            background-color: #0088cc;
+        }
+
+        /* RICH FOOTER */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--glass-border);
+            padding: 70px 5% 30px 5%;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo h4 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo h4 span {
+            background: linear-gradient(135deg, var(--gold-accent), var(--primary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-logo p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-col h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-col h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--primary-accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            transition: color var(--transition-speed);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-accent);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all var(--transition-speed);
+        }
+
+        .social-btn:hover {
+            background: var(--primary-accent);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        /* RESPONSIVE MEDIA QUERIES */
+        @media (max-width: 1024px) {
+
+            .welcome-grid,
+            .advisor-grid,
+            .recruit-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1.5fr 1fr;
+            }
+
+            .hero-carousel {
+                height: 480px;
+            }
+
+            .carousel-content h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                width: 100%;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                padding: 30px;
+                gap: 20px;
+                border-bottom: 1px solid var(--glass-border);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.mobile-active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-carousel {
+                height: 400px;
+            }
+
+            .carousel-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .carousel-overlay {
+                padding: 30px 5%;
+            }
+
+            .counter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefit-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FLOATING GLASSMORPHIC NAVIGATION HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-shield-halved" style="color: var(--primary-accent);"></i>
+                <span>Venkatesh Rapolu</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#policies">Policies & Plans</a></li>
+                <li><a href="#finder">Plan Finder</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-switch-btn" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- PREMIUM HERO SLIDESHOW -->
+    <div class="hero-carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <img src="https://aarvilic.wordpress.com/wp-content/uploads/2026/05/lic-jeevan-utsav-creative_eng-1920x500-1.jpg"
+                    alt="LIC Jeevan Utsav Plan" onerror="this.src='LIC-Jeevan-Utsav-Creative_Eng-1920x500.jpg'">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <span class="carousel-badge">New Launch</span>
+                        <h2>LIC Jeevan Utsav (Plan No. 871)</h2>
+                        <p>A guaranteed lifetime income plan with 10% annuity payout annually after deferment. Perfect
+                            to secure your golden years with absolute peace of mind.</p>
+                        <a href="#finder" class="btn btn-primary">Calculate Premium</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <img src="https://aarvilic.wordpress.com/wp-content/uploads/2026/05/lic-bima-lakshmi-plan-creative-1920x500-1.jpg"
+                    alt="LIC Bima Lakshmi Plan" onerror="this.src='LIC-Bima-Lakshmi-Plan-Creative-1920x500.jpg'">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <span class="carousel-badge">Wealth Creation</span>
+                        <h2>LIC Bima Lakshmi (Plan No. 857)</h2>
+                        <p>Excellent savings-oriented guarantee plan designed to build a solid financial pyramid for
+                            your family's future dreams and long-term financial security.</p>
+                        <a href="#policies" class="btn btn-secondary">Explore Plan Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <img src="https://aarvilic.wordpress.com/wp-content/uploads/2026/05/lics-nav-jeevan-shree-poster_a3_english-1920x500-04.jpg"
+                    alt="LIC Nav Jeevan Plan"
+                    onerror="this.src='LIC’s Nav Jeevan Shree Poster_A3_English 1920x500-04.jpg'">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <span class="carousel-badge">Protection First</span>
+                        <h2>LIC Nav Jeevan Shree Banner</h2>
+                        <p>High savings & lump-sum security on maturity. Ensure that your home and dependents are
+                            shielded against any financial uncertainties.</p>
+                        <a href="#contact" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+                <img src="https://aarvilic.wordpress.com/wp-content/uploads/2026/05/lic_protection-plus-eng-1920x500-1.jpg"
+                    alt="LIC Protection Plus" onerror="this.src='LIC_Protection-Plus-Eng-1920x500.jpg'">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <span class="carousel-badge">Family First</span>
+                        <h2>LIC Protection Plus</h2>
+                        <p>Comprehensive life cover and pure term shield to lock in low premium rates and secure your
+                            family's standard of living forever.</p>
+                        <a href="#contact" class="btn btn-secondary">Get Covered Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn carousel-btn-next" id="carouselNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+
+    <!-- EXPERIENCE & WELCOME COUNTER SECTION -->
+    <section id="about">
+        <div class="welcome-grid">
+            <div class="welcome-text">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                    <i class="fa-solid fa-user-tie" style="color: var(--primary-accent); font-size: 1.25rem;"></i>
+                    <span
+                        style="font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; color: var(--primary-accent);">Senior
+                        Life Insurance Advisor</span>
+                </div>
+                <h3>Welcome to Our Insurance Portal</h3>
+                <p>We are very eagerly waiting to give you efficient service in all Insurance matters. We invite you to
+                    fully explore our catalog of custom-fitted schemes designed to protect your household and amplify
+                    your personal wealth.</p>
+                <p>With vast experience in sales and service, we specialize in custom Income Protection Plans, Child
+                    Future Plans, Retirement Solutions, and Premium Health Packages.</p>
+
+                <div class="ethics-quote">
+                    "Our stringent code of ethics places the client's needs above all others and demands uncompromising
+                    integrity in every aspect of our business."
+                </div>
+
+                <div style="display: flex; gap: 15px; margin-top: 30px;">
+                    <a href="#contact" class="btn btn-primary">Get Personalized Quote</a>
+                    <a href="#policies" class="btn btn-glass">Browse All Plans</a>
+                </div>
+            </div>
+
+            <div class="counter-grid">
+                <div class="glass-card counter-box">
+                    <i class="fa-solid fa-award"></i>
+                    <div class="counter-number" data-target="27">0</div>
+                    <div class="counter-label">Years of Professional Excellence</div>
+                </div>
+                <div class="glass-card counter-box">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="counter-number" data-target="10000">0</div>
+                    <div class="counter-label">Protected Families</div>
+                </div>
+                <div class="glass-card counter-box">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <div class="counter-number" data-target="100">0</div>
+                    <div class="counter-label">% Claim Assistance Ratio</div>
+                </div>
+                <div class="glass-card counter-box">
+                    <i class="fa-solid fa-coins"></i>
+                    <div class="counter-number" data-target="500">0</div>
+                    <div class="counter-label">Million Claims Managed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPREHENSIVE POLICY CATALOG -->
+    <section id="policies" style="background: var(--bg-tertiary); transition: background var(--transition-speed);">
+        <div class="section-header">
+            <h2>Our Complete Insurance Portfolio</h2>
+            <p>Explore our carefully curated LIC Life Insurance and Star Health portfolios, designed to protect every
+                milestone of your life.</p>
+        </div>
+
+        <!-- LIC Life Insurance Portfolio -->
+        <div class="lic-portfolio-container">
+            <div class="lic-header">
+                <h3><i class="fa-solid fa-umbrella" style="color: var(--primary-accent);"></i> LIC Life Insurance Plans
+                </h3>
+                <p>High-yield savings, guaranteed pension, child education, and pure family shield plans.</p>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Plans</button>
+                <button class="filter-btn" data-filter="endowment">Endowment</button>
+                <button class="filter-btn" data-filter="wholelife">Whole Life</button>
+                <button class="filter-btn" data-filter="moneyback">Money Back</button>
+                <button class="filter-btn" data-filter="child">Child Plans</button>
+                <button class="filter-btn" data-filter="term">Term Insurance</button>
+                <button class="filter-btn" data-filter="pension">Pension</button>
+                <button class="filter-btn" data-filter="ulip">ULIP</button>
+                <button class="filter-btn" data-filter="singlepremium">Single Premium</button>
+            </div>
+
+            <div class="policy-grid" id="licGrid">
+
+                <!-- ==================== ENDOWMENT PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="endowment">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600"
+                            alt="LIC New Endowment Plan">
+                        <span class="policy-tag">Endowment</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>New Endowment Plan</h4>
+                        <p>A participating endowment plan combining savings and protection with flexible terms from 12
+                            to 35
+                            years. Ideal for building a long-term corpus.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Maturity: Sum Assured + Reversionary Bonuses +
+                                FAB
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Entry age: 8–50 years, Min SA: ₹2,00,000</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Loan facility & optional critical illness rider
+                            </li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 714</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="endowment">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=600"
+                            alt="LIC Jeevan Anand">
+                        <span class="policy-tag">Endowment</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Anand</h4>
+                        <p>Unique plan offering life cover even after maturity. Provides dual benefit of savings plus
+                            lifelong protection with bonus accumulation.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Life cover continues after maturity payout</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Death benefit: 125% SA or 7× annual premium
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Terms: 15–35 years, entry age 18–50</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 715</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="endowment">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1553729459-uj8ph0e1p8-unsplash?auto=format&fit=crop&q=80&w=600"
+                            alt="LIC Jeevan Labh"
+                            onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=600'">
+                        <span class="policy-tag">Endowment</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Labh</h4>
+                        <p>Limited premium payment endowment plan with flexible terms of 16, 21, or 25 years. Pay for
+                            shorter duration, enjoy coverage for longer.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Pay premiums for 10–16 years only</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Maturity: SA + Bonuses + FAB</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Entry age: 8–59 years, Min SA: ₹2,00,000</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 736</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="endowment">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600"
+                            alt="LIC Jeevan Lakshya">
+                        <span class="policy-tag">Family Security</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Lakshya</h4>
+                        <p>Structured to provide annual income (10% of SA) to family upon policyholder's death, plus
+                            premium
+                            waiver ensuring continued benefits.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Annual income benefit on death until maturity
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Waiver of future premiums on death</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Terms: 13–25 years, entry age 18–50</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 733</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="endowment">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=600"
+                            alt="New Jeevan Sathi">
+                        <span class="policy-tag">Joint Life</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>New Jeevan Sathi</h4>
+                        <p>A joint-life plan for married couples. Both spouses covered under one policy with premium
+                            waiver
+                            on first death and guaranteed additions.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Premium waiver if first spouse passes away</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions at 7% of annual premium
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Limited premium: 5, 10, or 15 years</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 889</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="endowment">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+                            alt="New Jeevan Sree">
+                        <span class="policy-tag">Guaranteed Returns</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>New Jeevan Sree</h4>
+                        <p>Non-participating, limited-premium endowment plan with high guaranteed additions (8.5–9.5% of
+                            annual premium) and fixed, stable returns.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Premium terms: 6, 8, 10, or 12 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions independent of market</li>
+                            <li><i class="fa-solid fa-circle-check"></i> No market risk — fully predictable returns</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 912</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== WHOLE LIFE PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="wholelife">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
+                            alt="LIC Jeevan Umang">
+                        <span class="policy-tag">Whole Life</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Umang</h4>
+                        <p>Participating whole-life plan providing 8% annual survival benefit after premium payment term
+                            until age 100. Bonuses boost final payout.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> 8% of SA paid annually for life (after PPT)
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium terms: 15, 20, 25, or 30 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Reversionary bonuses + Final Additional Bonus
+                            </li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 745</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="wholelife">
+                    <div class="policy-img-container">
+                        <img src="https://aarvilic.wordpress.com/wp-content/uploads/2020/08/old-couple.jpg"
+                            alt="LIC Jeevan Utsav">
+                        <span class="policy-tag">Whole Life</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Utsav</h4>
+                        <p>Non-participating whole-life plan with 10% guaranteed annual income or Flexi Income at 5.5%
+                            interest. Short premium commitment of 5–16 years.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> 10% of SA guaranteed annually for life</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Flexi Income option with 5.5% compounding</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions during premium term</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 771</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== MONEY BACK PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="moneyback">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600"
+                            alt="Money Back 20">
+                        <span class="policy-tag">Money Back</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Money Back – 20 Years</h4>
+                        <p>Periodic liquidity plan paying 20% of SA at the 5th, 10th, and 15th year. Remaining 40% +
+                            bonuses
+                            paid at maturity in year 20.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> 20% payout every 5 years during the term</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium paying term: 15 years only</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Full death benefit irrespective of payouts made
+                            </li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 720</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="moneyback">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=600"
+                            alt="Money Back 25">
+                        <span class="policy-tag">Money Back</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Money Back – 25 Years</h4>
+                        <p>Extended money-back plan paying 15% of SA at years 5, 10, 15, and 20, with 40% + bonuses at
+                            maturity in year 25.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> 15% payout every 5 years (4 payouts total)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium paying term: 20 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Bonus accumulation over longer tenure</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 721</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="moneyback">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&q=80&w=600"
+                            alt="Bima Lakshmi">
+                        <span class="policy-tag">Women Exclusive</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Bima Lakshmi</h4>
+                        <p>Non-participating plan exclusively for women with 25-year term, guaranteed additions at 7%,
+                            and
+                            three survival benefit options.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Designed exclusively for women policyholders
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Female Critical Illness Rider available</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Auto Cover if premiums missed after 3 years
+                            </li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 881</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="moneyback">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=600"
+                            alt="Bima Sree">
+                        <span class="policy-tag">HNI Plan</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Bima Sree</h4>
+                        <p>Premium money-back plan for High Net-Worth Individuals with ₹10L minimum SA, guaranteed
+                            additions, loyalty additions, and critical illness cover.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Min. SA: ₹10 Lakh (HNI focused)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Flexible terms: 14–28 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium Waiver Benefit if proposer dies</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 748</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== CHILD PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="child">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=600"
+                            alt="Children Money Back">
+                        <span class="policy-tag">Child Plan</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Children's Money Back Plan</h4>
+                        <p>Participating money-back plan paying 20% of SA at ages 18, 20, and 22, with 40% + bonuses at
+                            maturity. Perfect for education milestones.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Milestone payouts at 18, 20, and 22 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Life coverage throughout the policy term</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Optional Premium Waiver Benefit Rider</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 732</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="child">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=600"
+                            alt="Jeevan Tarun">
+                        <span class="policy-tag">Child Plan</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Tarun</h4>
+                        <p>Customizable child plan with annual survival benefits from age 20–24 and maturity at 25. Four
+                            payout proportion options available.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Annual payouts from age 20 to 24</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Reversionary bonuses + Final Additional Bonus
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium Waiver Benefit Rider available</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 734</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="child">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&fit=crop&q=80&w=600"
+                            alt="Amritbaal">
+                        <span class="policy-tag">Child Plan</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Amritbaal</h4>
+                        <p>Guaranteed-addition child savings plan (₹80 per ₹1000 SA per year). Single or limited premium
+                            with customizable maturity age from 18 to 25.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions of ₹80/₹1000 SA/year</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Flexible maturity age: 18 to 25 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Single or Limited Premium (5, 6, 7 years)</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 774</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== TERM PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="term">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600"
+                            alt="Jeevan Amar">
+                        <span class="policy-tag">Pure Term</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Amar</h4>
+                        <p>Flexible term plan with Level or Increasing SA options (10% annual increase from year 6–15).
+                            Special low rates for women and non-smokers.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Min SA: ₹25 Lakh, Max maturity: 80 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Level or Increasing Sum Assured options</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Discounted rates for women & non-smokers</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 955</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="term">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600"
+                            alt="Yuva Term">
+                        <span class="policy-tag">Youth Term</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Yuva Term</h4>
+                        <p>Designed for younger individuals with high coverage at minimal cost. Increasing SA option
+                            doubles
+                            coverage over time.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Increasing SA: doubles over the policy term
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Death benefit in instalments (5/10/15 years)
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Single, Regular, or Limited premium modes</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 875</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="term">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600"
+                            alt="Saral Jeevan Bima">
+                        <span class="policy-tag">Simple Term</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Saral Jeevan Bima</h4>
+                        <p>Standardized, simple, affordable term plan mandated by IRDAI. Low entry barrier with ₹5 Lakh
+                            minimum SA. Easy to understand, no complex features.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Minimum SA: ₹5 Lakh (most accessible)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Max maturity age: 70 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Standardized across all insurers</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 859</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="term">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73b4c1acf56?auto=format&fit=crop&q=80&w=600"
+                            alt="Bima Kavach">
+                        <span class="policy-tag">Lifetime Term</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Bima Kavach</h4>
+                        <p>Modern high-protection plan with risk cover up to 100 years and Life Stage option to increase
+                            SA
+                            at key milestones without medical tests.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Coverage up to 100 years of age</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Life Stage increases (marriage, child birth)
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Min SA: ₹2 Crore (high-value protection)</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 887</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== PENSION PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="pension">
+                    <div class="policy-img-container">
+                        <img src="https://aarvilic.wordpress.com/wp-content/uploads/2020/08/old-couple.jpg"
+                            alt="Jeevan Shanti">
+                        <span class="policy-tag">Deferred Pension</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Shanti</h4>
+                        <p>Deferred annuity plan — invest now, pension starts after 1–12 year deferment. Lock in annuity
+                            rates while still working for a higher future pension.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Single premium, deferment: 1–12 years</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Single Life & Joint Life annuity options</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Loan available after 3 months</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 758</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="pension">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
+                            alt="Jeevan Akshay VII">
+                        <span class="policy-tag">Immediate Pension</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Akshay VII</h4>
+                        <p>Immediate annuity with 10 different payout options including life annuity with/without return
+                            of
+                            purchase price and increasing annuity.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Pension starts immediately after investment
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 10 annuity options (most flexible pension)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Entry age: 30–85 years</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 857</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="pension">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=600"
+                            alt="Saral Pension">
+                        <span class="policy-tag">Simple Pension</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Saral Pension</h4>
+                        <p>Standard, transparent immediate annuity with only 2 options: Single Life or Joint Life.
+                            Returns
+                            100% purchase price to nominee on death.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed lifetime pension income</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 100% purchase price returned to nominee</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Entry age: 40–80 years</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 862</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== ULIP PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="ulip">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=600"
+                            alt="Nivesh Plus">
+                        <span class="policy-tag">ULIP</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Nivesh Plus</h4>
+                        <p>Single premium ULIP for lump-sum investors. One-time investment with life cover,
+                            market-linked
+                            returns, and fund switching flexibility.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Single premium — invest once, stay covered</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Multiple fund options (Equity, Debt, Balanced)
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Mortality charges refunded at maturity</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 749</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="ulip">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+                            alt="SIIP">
+                        <span class="policy-tag">ULIP SIP</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>SIIP (Systematic Investment Plan)</h4>
+                        <p>ULIP functioning like a mutual fund SIP. Disciplined regular investment with life cover, free
+                            fund switches, and partial withdrawal after lock-in.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> SIP-style periodic investing with insurance
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Free fund switches & partial withdrawals</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 5-year mandatory lock-in period</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 752</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="ulip">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=600"
+                            alt="Index Plus">
+                        <span class="policy-tag">Index ULIP</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Index Plus</h4>
+                        <p>Index-tracking ULIP investing in market benchmarks (Nifty 50/100). Low-cost wealth
+                            accumulation
+                            via passive index strategy with life cover.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Tracks Nifty 50 / Nifty 100 index funds</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Lower fund management charges</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Mortality charges refunded at maturity</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 873</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="ulip">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=600"
+                            alt="Protection Plus">
+                        <span class="policy-tag">ULIP Savings</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Protection Plus</h4>
+                        <p>Savings-oriented ULIP combining strong life cover with multiple fund options and guaranteed
+                            additions. Mortality charges returned at maturity.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Multiple fund options with free switching</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions boost fund value</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Full mortality charge refund at maturity</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 886</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SINGLE PREMIUM PLANS ==================== -->
+                <div class="glass-card policy-card" data-category="singlepremium">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600"
+                            alt="Single Premium Endowment">
+                        <span class="policy-tag">Single Premium</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Single Premium Endowment</h4>
+                        <p>One-time premium participating endowment plan. Pay once, enjoy life cover with simple
+                            reversionary bonuses and Final Additional Bonus.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> One-time lump-sum premium payment</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Maturity: SA + bonuses + FAB</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Loan facility available after 1 year</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 717</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="singlepremium">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
+                            alt="SP Jeevan Utsav">
+                        <span class="policy-tag">Single Premium</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Utsav (Single Premium)</h4>
+                        <p>Whole-life plan with single premium payment. Guaranteed annual income of 10% SA or Flexi
+                            Income
+                            at 5.5% compounding. Lifelong risk cover.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Pay once, receive income for life</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 10% annual income or Flexi Income option</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions during accumulation</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 883</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="singlepremium">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=600"
+                            alt="SP Jeevan Sathi">
+                        <span class="policy-tag">Joint Life SP</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Jeevan Sathi (Single Premium)</h4>
+                        <p>Joint-life single premium endowment for couples. Guaranteed additions of ₹70/₹1000 SA per
+                            year.
+                            Flexible death benefit options for both spouses.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Both spouses covered in one policy</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guaranteed additions: ₹70/₹1000 SA/year</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Min SA: ₹3 Lakh, Loan facility available</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Plan 888</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Close #licGrid -->
+        </div> <!-- Close .lic-portfolio-container -->
+
+        <!-- ==================== STAR HEALTH INSURANCE ==================== -->
+        <div class="star-health-section">
+            <div class="star-health-header">
+                <h3><i class="fa-solid fa-heart-pulse" style="color: var(--star-health-color);"></i> Star Health
+                    Insurance Plans</h3>
+                <p>Premium medical protection, maternity benefits, senior citizen schemes, and automatic restoration
+                    shields.</p>
+            </div>
+
+            <div class="policy-grid" id="starHealthGrid">
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600"
+                            alt="Super Star Preferred">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Super Star (Preferred)</h4>
+                        <p>Comprehensive health plan with "Freeze Your Age" premium lock, unlimited restoration, and
+                            limitless care for a single lifetime claim.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Freeze Your Age — lock premium rates</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Sum Insured: ₹5 Lakh to Unlimited</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 21 optional riders & no room rent limits</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=600"
+                            alt="Health Assure">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Health Assure</h4>
+                        <p>Versatile family plan covering up to 9 members with maternity, newborn care (Day 1), modern
+                            treatments, and unlimited restoration.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Sum Insured up to ₹2 Crore</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Day 1 maternity & newborn coverage</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Wellness discounts up to 20%</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&q=80&w=600"
+                            alt="Women Care">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Women Care</h4>
+                        <p>Specialized plan for women aged 18–75 covering maternity, IVF/assisted reproduction,
+                            bariatric
+                            surgery, and lump-sum cancer diagnosis payout.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Enrollment even during pregnancy</li>
+                            <li><i class="fa-solid fa-circle-check"></i> IVF, fertility treatments, bariatric surgery
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Lump-sum payout on cancer diagnosis</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600"
+                            alt="Young Star">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Young Star</h4>
+                        <p>Tailored for young adults (18–40). Silver & Gold variants with no pre-medical screening,
+                            maternity cover, and 25% bonus for road accidents.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Sum Insured up to ₹1 Crore</li>
+                            <li><i class="fa-solid fa-circle-check"></i> No pre-medical screening required</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 25% bonus for road traffic accidents</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600"
+                            alt="Star Comprehensive">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Star Comprehensive</h4>
+                        <p>Feature-rich plan covering hospitalization, OPD consultations, dental/ophthalmic care,
+                            maternity,
+                            newborn, and 100% automatic restoration.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> SI: ₹5 Lakh – ₹1 Crore, lifelong renewal</li>
+                            <li><i class="fa-solid fa-circle-check"></i> OPD, dental & ophthalmic care included</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Zero co-payment if enrolled before age 61</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?auto=format&fit=crop&q=80&w=600"
+                            alt="Senior Citizens Red Carpet">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Senior Citizens Red Carpet</h4>
+                        <p>Designed for seniors (60–75). Lifelong renewal, no pre-acceptance medical screening,
+                            pre-existing
+                            disease cover after 12 months.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> No pre-acceptance medical screening</li>
+                            <li><i class="fa-solid fa-circle-check"></i> SI: ₹1 Lakh – ₹25 Lakh, lifelong renewal</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Pre-existing diseases covered after 12 months
+                            </li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card policy-card" data-category="starhealth">
+                    <div class="policy-img-container">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=600"
+                            alt="Super Surplus Gold">
+                        <span class="policy-tag" style="background: rgba(0, 128, 128, 0.8);">Star Health</span>
+                    </div>
+                    <div class="policy-body">
+                        <h4>Super Surplus Gold</h4>
+                        <p>Super top-up plan providing extra coverage above your existing policy's limit. Up to ₹1 Crore
+                            SI
+                            with maternity, air ambulance, and recharge benefit.</p>
+                        <ul class="policy-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Works above existing policy deductible</li>
+                            <li><i class="fa-solid fa-circle-check"></i> SI up to ₹1 Crore with recharge benefit</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Covers modern treatments & air ambulance</li>
+                        </ul>
+                        <div class="policy-footer">
+                            <span class="policy-code">Star Health</span>
+                            <a href="#contact" class="btn btn-glass btn-sm">Inquire <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- Close #starHealthGrid -->
+        </div> <!-- Close .star-health-section -->
+    </section>
+
+    <!-- SMART POLICY FINDER WIDGET -->
+    <section id="finder">
+        <div class="advisor-section">
+            <div class="advisor-grid">
+                <div class="advisor-info">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                        <i class="fa-solid fa-brain" style="color: var(--primary-accent); font-size: 1.25rem;"></i>
+                        <span
+                            style="font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; color: var(--primary-accent);">Smart
+                            Advisor</span>
+                    </div>
+                    <h3>Let Our AI Advisor Find the Best Plan For You</h3>
+                    <p>Instead of reading complex product specifications, take 30 seconds to fill in our tailored
+                        plan-recommendation questionnaire.</p>
+                    <div class="advisor-features">
+                        <div class="advisor-feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <strong style="display:block;">Tailored Matches</strong>
+                                <span style="font-size:0.85rem; color: var(--text-secondary);">Finds specific plan codes
+                                    that fit your personal goals.</span>
+                            </div>
+                        </div>
+                        <div class="advisor-feature-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <strong style="display:block;">Instant Breakdown</strong>
+                                <span style="font-size:0.85rem; color: var(--text-secondary);">Explains premium metrics
+                                    immediately without paperwork.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card advisor-card-widget">
+                    <!-- Step 1 -->
+                    <div class="finder-step active" id="step1">
+                        <div class="step-indicators">
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator"></div>
+                            <div class="step-indicator"></div>
+                            <div class="step-indicator"></div>
+                        </div>
+                        <h4>1. What type of protection are you looking for?</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn" onclick="selectCategory('lic', this)">
+                                <span><i class="fa-solid fa-umbrella-beach"
+                                        style="margin-right:10px; color: var(--primary-accent);"></i> Life Insurance &
+                                    Savings (LIC)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectCategory('health', this)">
+                                <span><i class="fa-solid fa-house-medical"
+                                        style="margin-right:10px; color: var(--star-health-color, #008080);"></i>
+                                    Medical & Health Insurance (Star Health)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectCategory('dual', this)">
+                                <span><i class="fa-solid fa-shield-heart"
+                                        style="margin-right:10px; color: var(--primary-accent);"></i> Complete Shield
+                                    (LIC Life + Star Health Combo)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="finder-step" id="step2">
+                        <div class="step-indicators">
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator"></div>
+                            <div class="step-indicator"></div>
+                        </div>
+                        <h4>2. Who is the primary coverage for?</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn" onclick="selectTarget('individual', this)">
+                                <span>Myself (Individual adult)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectTarget('couple', this)">
+                                <span>My Spouse & Me (Married couple)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectTarget('family', this)">
+                                <span>My Entire Family (Spouse, Kids & Self)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectTarget('senior', this)">
+                                <span>Parents / Senior Citizens (Age 60+)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                        </div>
+                        <div class="widget-nav">
+                            <button class="btn btn-glass btn-sm" onclick="prevStep()"><i
+                                    class="fa-solid fa-arrow-left"></i> Back</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="finder-step" id="step3">
+                        <div class="step-indicators">
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator"></div>
+                        </div>
+                        <h4>3. Select your primary insurance objective:</h4>
+
+                        <!-- LIC Objectives -->
+                        <div class="option-buttons" id="objective-lic-options" style="display: none;">
+                            <button class="option-btn" onclick="selectObjective('retirement', this)">
+                                <span><i class="fa-solid fa-piggy-bank"
+                                        style="margin-right:10px; color: var(--primary-accent);"></i> Guaranteed
+                                    Lifetime Income & Pension</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('child', this)">
+                                <span><i class="fa-solid fa-graduation-cap"
+                                        style="margin-right:10px; color: var(--primary-accent);"></i> Child's Education
+                                    & Future Milestones</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('wealth', this)">
+                                <span><i class="fa-solid fa-chart-line"
+                                        style="margin-right:10px; color: var(--primary-accent);"></i> Wealth Savings &
+                                    Endowment Growth</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('term', this)">
+                                <span><i class="fa-solid fa-shield-halved"
+                                        style="margin-right:10px; color: var(--primary-accent);"></i> Pure Term Cover
+                                    (High Life Protection)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                        </div>
+
+                        <!-- Star Health Objectives -->
+                        <div class="option-buttons" id="objective-health-options" style="display: none;">
+                            <button class="option-btn" onclick="selectObjective('health_comprehensive', this)">
+                                <span><i class="fa-solid fa-hospital"
+                                        style="margin-right:10px; color: var(--star-health-color, #008080);"></i>
+                                    Comprehensive Family Hospitalization</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('health_maternity', this)">
+                                <span><i class="fa-solid fa-baby-carriage"
+                                        style="margin-right:10px; color: var(--star-health-color, #008080);"></i>
+                                    Maternity & Newborn Care (Day 1)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('health_young', this)">
+                                <span><i class="fa-solid fa-user-shield"
+                                        style="margin-right:10px; color: var(--star-health-color, #008080);"></i> Young
+                                    Adult (No Pre-Medical Test Required)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('senior_health', this)">
+                                <span><i class="fa-solid fa-wheelchair"
+                                        style="margin-right:10px; color: var(--star-health-color, #008080);"></i> Senior
+                                    Citizen Health Protection</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectObjective('health_topup', this)">
+                                <span><i class="fa-solid fa-circle-plus"
+                                        style="margin-right:10px; color: var(--star-health-color, #008080);"></i> High
+                                    Top-Up / Extra Deductible Protection</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                        </div>
+
+                        <div class="widget-nav">
+                            <button class="btn btn-glass btn-sm" onclick="prevStep()"><i
+                                    class="fa-solid fa-arrow-left"></i> Back</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="finder-step" id="step4">
+                        <div class="step-indicators">
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator active"></div>
+                            <div class="step-indicator active"></div>
+                        </div>
+                        <h4>4. Select your preferred monthly budget:</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn" onclick="selectBudget('low', this)">
+                                <span>Budget-Friendly (₹2,000 - ₹5,000 / month)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectBudget('medium', this)">
+                                <span>Moderate Premium (₹5,000 - ₹10,000 / month)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="option-btn" onclick="selectBudget('high', this)">
+                                <span>High Net Worth / Maximum Cover (₹10,000+ / month)</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                        </div>
+                        <div class="widget-nav">
+                            <button class="btn btn-glass btn-sm" onclick="prevStep()"><i
+                                    class="fa-solid fa-arrow-left"></i> Back</button>
+                        </div>
+                    </div>
+
+                    <!-- Step Result -->
+                    <div class="finder-step finder-result" id="stepResult">
+                        <div class="success-checkmark">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="result-title">Your Optimal Match Recommendation</div>
+                        <h4 class="result-plan-name" id="recommendedPlan">LIC Jeevan Utsav (Plan 871)</h4>
+                        <p class="result-desc" id="recommendedDesc">Based on your age and objectives, we highly suggest
+                            this guaranteed plan that generates 10% annuity payout along with high risk-cover
+                            multipliers.</p>
+
+                        <div style="display:flex; flex-direction:column; gap:12px;">
+                            <a href="#contact" class="btn btn-primary"
+                                onclick="injectRecommendationIntoContactForm()">Request Free Quote For This Plan</a>
+                            <button class="btn btn-glass" onclick="restartFinder()">Start Over <i
+                                    class="fa-solid fa-rotate-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT FORM & INFO SECTION -->
+    <section id="contact" style="background: var(--bg-tertiary); transition: background var(--transition-speed);">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Schedule a customized premium projection or request a direct advisory consultation.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info-panel">
+                <div>
+                    <a href="mailto:aarvilic@gmail.com" class="contact-method-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="contact-method-details">
+                            <h5>Email Address</h5>
+                            <p>aarvilic@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+919948630735" class="contact-method-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-method-details">
+                            <h5>Phone Number</h5>
+                            <p>(+91) 9948630735</p>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/venkateshrapolu" target="_blank" rel="noreferrer noopener"
+                        class="contact-method-card">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <div class="contact-method-details">
+                            <h5>Telegram Channels</h5>
+                            <p>@venkateshrapolu (Instant messaging)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-map-mock">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong style="margin-bottom: 5px; color: var(--text-primary);">Headquarters Location</strong>
+                    <p style="font-size:0.85rem; margin:0;">B N R Nagar, Sagar Road, Hyderabad - 500070</p>
+                </div>
+            </div>
+
+            <div class="glass-card lead-form-card">
+                <div class="success-modal" id="formSuccessModal">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 10px;">Message Dispatched!</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px;">Thank you for getting in touch.
+                        Venkatesh Rapolu will analyze your objectives and contact you shortly.</p>
+                    <button class="btn btn-glass" onclick="resetContactForm()">Send Another Message</button>
+                </div>
+
+                <form id="leadCaptureForm" onsubmit="handleFormSubmit(event)">
+                    <h4 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 30px;">Request Financial Projection
+                    </h4>
+
+                    <div class="form-group">
+                        <input type="text" id="formName" class="form-input" placeholder=" " required>
+                        <label class="form-label">Full Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+                        <label class="form-label">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="formPhone" class="form-input" placeholder=" " required>
+                        <label class="form-label">WhatsApp Number</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="formMessage" class="form-input" placeholder=" " required></textarea>
+                        <label class="form-label">Message Details (e.g. Plan code, goal goals...)</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+                        <span>Submit Secure Request</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING COMMUNICATION HUBS -->
+    <div class="floating-chat-widget">
+        <a href="https://wa.me/919948630735" target="_blank" rel="noreferrer noopener"
+            class="floating-btn floating-whatsapp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/venkateshrapolu" target="_blank" rel="noreferrer noopener"
+            class="floating-btn floating-telegram" aria-label="Contact via Telegram">
+            <i class="fa-solid fa-paper-plane"></i>
+        </a>
+    </div>
+
+    <!-- MODERN RICH FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h4><i class="fa-solid fa-shield-halved"
+                        style="color: var(--primary-accent); margin-right:8px;"></i><span>Venkatesh Rapolu</span></h4>
+                <p>Delivering robust income security, wealth protection, and retirement plans since 1999.</p>
+                <div class="social-links">
+                    <a href="https://t.me/venkateshrapolu" target="_blank" class="social-btn"><i
+                            class="fa-brands fa-telegram"></i></a>
+                    <a href="mailto:aarvilic@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Our Services</h5>
+                <ul class="footer-links">
+                    <li><a href="#policies">Income Protection</a></li>
+                    <li><a href="#policies">Child Future Planning</a></li>
+                    <li><a href="#policies">Retirement Pension Funds</a></li>
+                    <li><a href="#policies">Key-Man Corporate Cover</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Policy Support</h5>
+                <ul class="footer-links">
+                    <li><a href="#contact">Claims Settlement</a></li>
+                    <li><a href="#contact">Premium Calculator</a></li>
+                    <li><a href="#contact">Policy Downloads</a></li>
+                    <li><a href="#contact">Help Desk</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Back to Top</a></li>
+                    <li><a href="#about">About Our Experience</a></li>
+                    <li><a href="#finder">AI Smart Advisor</a></li>
+                    <li><a href="#contact">Consultation Center</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Venkatesh Rapolu (LIC Chief Life Insurance Advisor). All rights reserved. Created in
+                partnership with Antigravity.</p>
+            <p style="font-size:0.8rem; color:var(--text-secondary);">LIC is a registered trademark of Life Insurance
+                Corporation of India.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // --- 1. DARK / LIGHT SYSTEM PERSISTENCE ---
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fa-solid fa-sun';
+            } else {
+                themeIcon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        // --- 2. MOBILE MENU TOGGLE ---
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-active');
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('mobile-active')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
+            }
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('mobile-active');
+                menuToggle.querySelector('i').className = 'fa-solid fa-bars';
+            });
+        });
+
+        // --- 3. PREMIUM HERO CAROUSEL ---
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dotsContainer = document.getElementById('carouselDots');
+        const track = document.getElementById('carouselTrack');
+        const prevBtn = document.getElementById('carouselPrev');
+        const nextBtn = document.getElementById('carouselNext');
+
+        let currentSlideIndex = 0;
+        let slideInterval;
+
+        // Generate dot elements
+        slides.forEach((_, idx) => {
+            const dot = document.createElement('div');
+            dot.className = `carousel-dot ${idx === 0 ? 'active' : ''}`;
+            dot.addEventListener('click', () => goToSlide(idx));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+            slides.forEach((slide, idx) => {
+                if (idx === currentSlideIndex) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+            dots.forEach((dot, idx) => {
+                if (idx === currentSlideIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlideIndex = index;
+            updateCarousel();
+            resetAutoplay();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoplay();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoplay();
+        });
+
+        function startAutoplay() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(slideInterval);
+            startAutoplay();
+        }
+
+        startAutoplay();
+
+        // --- 4. SCROLL COUNTERS TRIGGER ---
+        const counterBoxes = document.querySelectorAll('.counter-number');
+        let animated = false;
+
+        function animateCounters() {
+            counterBoxes.forEach(box => {
+                const target = +box.getAttribute('data-target');
+                const speed = target > 1000 ? 150 : 30;
+                let count = 0;
+
+                const updateCount = () => {
+                    const increment = Math.ceil(target / speed);
+                    count += increment;
+                    if (count < target) {
+                        box.innerText = count.toLocaleString() + (target === 100 ? '%' : '+');
+                        setTimeout(updateCount, 15);
+                    } else {
+                        box.innerText = target.toLocaleString() + (target === 100 ? '%' : '+');
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const aboutSection = document.getElementById('about');
+            if (!aboutSection) return;
+            const pos = aboutSection.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+
+            if (pos < screenHeight * 0.75 && !animated) {
+                animateCounters();
+                animated = true;
+            }
+        });
+
+        // --- 5. COMPREHENSIVE POLICY TAB FILTERING (LIC ONLY) ---
+        const filterBtns = document.querySelectorAll('.lic-portfolio-container .filter-btn');
+        const policyCards = document.querySelectorAll('#licGrid .policy-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+                policyCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeIn 0.4s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // --- 6. SMART POLICY FINDER LOGIC ---
+        let selectedCategoryValue = '';
+        let selectedTargetValue = '';
+        let selectedObjectiveValue = '';
+        let selectedBudgetValue = '';
+
+        function selectCategory(category, btnEl) {
+            selectedCategoryValue = category;
+
+            // Adjust step 3 objectives based on category selection
+            const licOpts = document.getElementById('objective-lic-options');
+            const healthOpts = document.getElementById('objective-health-options');
+            if (category === 'health') {
+                licOpts.style.display = 'none';
+                healthOpts.style.display = 'flex';
+            } else {
+                licOpts.style.display = 'flex';
+                healthOpts.style.display = 'none';
+            }
+
+            document.querySelectorAll('#step1 .option-btn').forEach(btn => btn.classList.remove('selected'));
+            btnEl.classList.add('selected');
+            setTimeout(() => switchStep(1, 2), 350);
+        }
+
+        function selectTarget(target, btnEl) {
+            selectedTargetValue = target;
+            document.querySelectorAll('#step2 .option-btn').forEach(btn => btn.classList.remove('selected'));
+            btnEl.classList.add('selected');
+            setTimeout(() => switchStep(2, 3), 350);
+        }
+
+        function selectObjective(objective, btnEl) {
+            selectedObjectiveValue = objective;
+            document.querySelectorAll('#step3 .option-btn').forEach(btn => btn.classList.remove('selected'));
+            btnEl.classList.add('selected');
+            setTimeout(() => switchStep(3, 4), 350);
+        }
+
+        function selectBudget(budget, btnEl) {
+            selectedBudgetValue = budget;
+            document.querySelectorAll('#step4 .option-btn').forEach(btn => btn.classList.remove('selected'));
+            btnEl.classList.add('selected');
+            setTimeout(showResults, 350);
+        }
+
+        function switchStep(from, to) {
+            document.getElementById(`step${from}`).classList.remove('active');
+            document.getElementById(`step${to}`).classList.add('active');
+        }
+
+        function prevStep() {
+            const currentActiveStep = document.querySelector('.finder-step.active');
+            const id = currentActiveStep.id;
+
+            if (id === 'step2') switchStep(2, 1);
+            if (id === 'step3') switchStep(3, 2);
+            if (id === 'step4') switchStep(4, 3);
+        }
+
+        function showResults() {
+            document.getElementById('step4').classList.remove('active');
+
+            const rTitle = document.getElementById('recommendedPlan');
+            const rDesc = document.getElementById('recommendedDesc');
+
+            let planName = '';
+            let planDesc = '';
+
+            if (selectedCategoryValue === 'health') {
+                if (selectedTargetValue === 'senior' || selectedObjectiveValue === 'senior_health') {
+                    planName = 'Senior Citizens Red Carpet (Star Health)';
+                    planDesc = 'Outstanding medical support for seniors (aged 60-75). Covers pre-existing diseases, outpatient consultations, and checkups without requiring pre-insurance medical screenings.';
+                } else if (selectedObjectiveValue === 'health_maternity') {
+                    if (selectedTargetValue === 'individual' || selectedTargetValue === 'couple') {
+                        planName = 'Women Care Plan (Star Health)';
+                        planDesc = 'Specialized health cover for women aged 18-75. Includes comprehensive maternity care, IVF/assisted reproduction cover, bariatric surgery, and a lump-sum payout on cancer diagnosis.';
+                    } else {
+                        planName = 'Health Assure Plan (Star Health)';
+                        planDesc = 'Versatile health shield covering up to 9 family members. Includes Day-1 maternity cover, newborn hospitalization, wellness discounts, and automatic sum insured restoration.';
+                    }
+                } else if (selectedObjectiveValue === 'health_young') {
+                    planName = 'Young Star Plan (Star Health)';
+                    planDesc = 'Tailored for young adults (18-40) seeking cost-effective coverage. Requires zero pre-insurance medical screening and provides a 25% sum insured bonus for road traffic accidents.';
+                } else if (selectedObjectiveValue === 'health_topup') {
+                    planName = 'Super Surplus Gold (Star Health)';
+                    planDesc = 'Premium super top-up coverage providing up to ₹1 Crore extra cover over your primary policy deductible. Includes modern treatments and air ambulance benefits.';
+                } else if (selectedTargetValue === 'family' || selectedObjectiveValue === 'health_comprehensive') {
+                    planName = 'Star Comprehensive Plan';
+                    planDesc = 'Ultimate zero-copay health protection. Covers air ambulance, OPD benefits, dental and ophthalmic treatments, and newborn hospital charges.';
+                } else {
+                    planName = 'Super Star (Preferred) (Star Health)';
+                    planDesc = 'Features a unique "Freeze Your Age" premium-lock benefit. Outpatient coverage, zero room rent limits, and 21 optional rider add-ons.';
+                }
+            } else if (selectedCategoryValue === 'lic') {
+                if (selectedObjectiveValue === 'retirement') {
+                    if (selectedTargetValue === 'senior') {
+                        planName = 'LIC Saral Pension (Plan No. 862)';
+                        planDesc = 'Highly straightforward immediate pension plan. Offers guaranteed lifelong regular income with a 100% refund of the purchase price to family members.';
+                    } else if (selectedBudgetValue === 'high') {
+                        planName = 'LIC Jeevan Utsav (Plan No. 871)';
+                        planDesc = 'Elite whole-life plan with a short premium term. Offers a guaranteed 10% annual income payout starting after premium payments, combined with lifetime cover.';
+                    } else {
+                        planName = 'LIC Jeevan Shanti (Plan No. 858)';
+                        planDesc = 'Guaranteed deferred annuity plan. Accrues high compounding addition rates during deferment, translating to a highly competitive, secure retirement pension.';
+                    }
+                } else if (selectedObjectiveValue === 'child') {
+                    if (selectedBudgetValue === 'high') {
+                        planName = 'LIC Amritbaal (Plan No. 874)';
+                        planDesc = 'Elite child insurance offering a guaranteed addition of ₹80 per ₹1,000 sum insured. Designed specifically to fund university education and major child life stages.';
+                    } else {
+                        planName = 'LIC Jeevan Tarun (Plan No. 834)';
+                        planDesc = 'Highly flexible savings-cum-protection plan for children. Outlines modular options for survival benefits between ages 20-24, with full maturity at age 25.';
+                    }
+                } else if (selectedObjectiveValue === 'wealth') {
+                    if (selectedTargetValue === 'couple') {
+                        planName = 'LIC New Jeevan Sathi (Plan No. 889)';
+                        planDesc = 'Unique joint-life protection for husband and wife. Features automatic premium waiver benefits on the first partner\'s demise while keeping the other covered.';
+                    } else if (selectedBudgetValue === 'high') {
+                        planName = 'LIC Jeevan Labh (Plan No. 836)';
+                        planDesc = 'Limited premium payment endowment plan with the highest maturity returns. Offers strong savings accumulation alongside comprehensive risk cover.';
+                    } else if (selectedBudgetValue === 'low') {
+                        planName = 'LIC Bima Lakshmi (Plan No. 857)';
+                        planDesc = 'Affordable savings and security shield with guaranteed additions. Ideal for stable, low-risk capital appreciation over a fixed duration.';
+                    } else {
+                        planName = 'LIC Jeevan Anand (Plan No. 815)';
+                        planDesc = 'Classic "double-cover" wealth protection. Pays the complete maturity sum and keeps a separate life insurance cover active for the rest of your life at zero cost.';
+                    }
+                } else { // term
+                    if (selectedBudgetValue === 'high') {
+                        planName = 'LIC Bima Kavach (Plan No. 887)';
+                        planDesc = 'Premium term cover that refunds all premiums at maturity. Delivers high-limit pure family protection up to age 100.';
+                    } else if (selectedBudgetValue === 'low') {
+                        planName = 'LIC Saral Jeevan Bima (Plan No. 859)';
+                        planDesc = 'Standardized, easily accessible term insurance plan. Delivers straightforward, hassle-free life cover with no complex conditions.';
+                    } else {
+                        planName = 'LIC Yuva Term (Plan No. 875)';
+                        planDesc = 'Modern, high-cover pure term insurance designed for young professionals. Delivers massive family protection coverages at highly competitive rates.';
+                    }
+                }
+            } else { // dual cover
+                if (selectedTargetValue === 'senior') {
+                    planName = 'Senior Care Combo: LIC Saral Pension + Star Senior Red Carpet';
+                    planDesc = 'A complete retirement package. Combines LIC\'s guaranteed immediate pension (100% refund of purchase price) with Star Health\'s dedicated senior hospitalization cover.';
+                } else if (selectedObjectiveValue === 'retirement') {
+                    planName = 'Elite Retirement Combo: LIC Jeevan Utsav + Star Comprehensive';
+                    planDesc = 'Unparalleled financial freedom. Combines a guaranteed 10% annual lifetime payout from LIC with Star Health\'s zero-copay medical hospitalization shield.';
+                } else if (selectedObjectiveValue === 'child') {
+                    planName = 'Family Growth Combo: LIC Amritbaal + Star Health Assure';
+                    planDesc = 'Comprehensive child and health shield. Links LIC\'s highest-yielding education fund (₹80/1000 SA additions) with a health floater covering up to 9 members.';
+                } else if (selectedObjectiveValue === 'term') {
+                    planName = 'Shield Plus Combo: LIC Yuva Term + Star Super Star (Preferred)';
+                    planDesc = 'Maximum security, minimum cost. Pairs a massive-cover pure life term insurance with an age-locked premium health insurance plan.';
+                } else {
+                    planName = 'Venkatesh\'s Signature Combo: LIC Jeevan Labh + Star Comprehensive';
+                    planDesc = 'Our most recommended combo. Integrates LIC\'s highest-returning limited-pay savings plan with Star Health\'s premium zero-copay family hospitalization plan.';
+                }
+            }
+
+            rTitle.innerText = planName;
+            rDesc.innerText = planDesc;
+
+            document.getElementById('stepResult').classList.add('active');
+        }
+
+        function restartFinder() {
+            selectedCategoryValue = '';
+            selectedTargetValue = '';
+            selectedObjectiveValue = '';
+            selectedBudgetValue = '';
+
+            document.querySelectorAll('.finder-step').forEach(step => step.classList.remove('active'));
+            document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+
+            document.getElementById('step1').classList.add('active');
+        }
+
+        function injectRecommendationIntoContactForm() {
+            const rTitle = document.getElementById('recommendedPlan').innerText;
+            const messageArea = document.getElementById('formMessage');
+            messageArea.value = `Hello Venkatesh! I just completed your Smart Policy Finder on the site and was recommended the plan: "${rTitle}". 
+
+Here are my details:
+- Coverage Type: ${selectedCategoryValue.toUpperCase()}
+- Target Group: ${selectedTargetValue.toUpperCase()}
+- Primary Objective: ${selectedObjectiveValue.toUpperCase()}
+- Premium Budget: ${selectedBudgetValue.toUpperCase()}
+
+Please contact me to share custom premium illustrations and details. Thank you!`;
+            messageArea.dispatchEvent(new Event('change'));
+        }
+
+
+
+        // --- 8. LEAD FORM HANDLER & REAL-TIME INTERACTION ---
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+
+            // Premium Submission Button State Change
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Directing secure upload...`;
+
+            setTimeout(() => {
+                document.getElementById('formSuccessModal').classList.add('active');
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }, 1500);
+        }
+
+        function resetContactForm() {
+            document.getElementById('leadCaptureForm').reset();
+            document.querySelectorAll('.form-input').forEach(input => {
+                // reset label placement
+                input.dispatchEvent(new Event('change'));
+            });
+            document.getElementById('formSuccessModal').classList.remove('active');
+        }
+
+        // --- 9. NAV LINK ACTIVE ON SCROLL ---
+        const sections = document.querySelectorAll('section, .hero-carousel');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop) {
+                    if (section.id) {
+                        current = section.id;
+                    } else if (section.classList.contains('hero-carousel')) {
+                        current = '';
+                    }
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                const href = item.getAttribute('href');
+                if (href === '#' && current === '') {
+                    item.classList.add('active');
+                } else if (href === `#${current}`) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
