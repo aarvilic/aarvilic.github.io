@@ -1,7 +1,8 @@
 function triggerGoogleTranslate(lang) {
     const select = document.querySelector(".goog-te-combo");
     if (!select) {
-        console.warn("Google Translate not yet initialized");
+        // Try again until Google injects the element
+        setTimeout(() => triggerGoogleTranslate(lang), 300);
         return;
     }
     select.value = lang;
@@ -12,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const langSelect = document.getElementById("page-lang");
     langSelect.addEventListener("change", (e) => {
         if (e.target.value) {
-            // Wait a tiny bit to ensure Google’s widget is ready
-            setTimeout(() => triggerGoogleTranslate(e.target.value), 500);
+            triggerGoogleTranslate(e.target.value);
         }
     });
 });

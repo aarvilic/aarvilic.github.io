@@ -274,3 +274,12 @@ footer {
     color: #fff;
     transform: translateY(-3px);
 }
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
