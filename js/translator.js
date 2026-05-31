@@ -1,16 +1,9 @@
 /**
  * Google Translate — cookie-based switcher.
- *
- * On static / GitHub Pages sites the goog-te-combo <select> lives inside
- * a sandboxed iframe injected by Google, so dispatchEvent() from the parent
- * document never reaches it.  The reliable alternative is to write the
- * `googtrans` cookie that Google Translate reads on every page load.
- *
- * Cookie format:  googtrans=/sourceLanguage/targetLanguage
+ * Cookie format: googtrans=/sourceLanguage/targetLanguage
  */
 function setGoogTransCookie(lang) {
-    const hostname = location.hostname;
-    const domain = hostname.replace(/^www\./, '');
+    const domain = location.hostname.replace(/^www\./, '');
 
     const expiry = lang === 'en'
         ? 'Thu, 01 Jan 1970 00:00:00 UTC'
@@ -24,36 +17,49 @@ function setGoogTransCookie(lang) {
     document.cookie = `${cookieBase}; domain=.${domain}`;
 }
 
-/** Immediately hide the Google Translate banner iframe + reset body offset. */
+/** Hide any Google Translate banner iframes already in the DOM. */
 function suppressGoogleBanner() {
-    // Hide every iframe that Google injects for its toolbar
-    document.querySelectorAll('iframe').forEach(frame => {
-        if (
-            frame.classList.contains('skiptranslate') ||
-            frame.name === 'google_translate_o' ||
-            (frame.src && frame.src.includes('translate.google'))
-        ) {
-            frame.style.cssText = 'display:none!important;height:0!important;';
-        }
+    document.querySelectorAll('iframe.skiptranslate, .goog-te-banner-frame').forEach(el => {
+        el.style.display = 'none';
     });
-    // Google shifts <body> down by the banner height — undo it
-    document.body.style.top = '0';
-    document.body.style.removeProperty('margin-top');
+    // Undo the body shift Google applies when the banner is visible
+    if (document.body) {
+        document.body.style.top = '0';
+    }
 }
 
-/** Use a MutationObserver to catch the banner the moment Google injects it. */
+/**
+ * Watch for Google's banner being inserted, but ONLY on childList changes
+ * (no attribute observation) to avoid triggering an infinite loop when
+ * we ourselves modify element styles.
+ */
 function watchForGoogleBanner() {
-    suppressGoogleBanner(); // run once immediately in case it's already there
+    suppressGoogleBanner();
 
-    const observer = new MutationObserver(() => suppressGoogleBanner());
-    observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+    const observer = new MutationObserver((mutations) => {
+        let needsSuppress = false;
+        for (const m of mutations) {
+            if (m.addedNodes.length > 0) {
+                needsSuppress = true;
+                break;
+            }
+        }
+        if (needsSuppress) suppressGoogleBanner();
+    });
+
+    observer.observe(document.body, {
+        childList: true,  // watch for new nodes only
+        subtree: true     // include all descendants
+        // attributes: false (default) — CRITICAL: omitting this prevents the
+        // infinite loop caused by our own style changes re-triggering the observer
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const langSelect = document.getElementById('page-lang');
     if (!langSelect) return;
 
-    // Sync the dropdown with the active translation on page load
+    // Sync dropdown with active translation on page load
     const match = document.cookie.match(/(?:^|;\s*)googtrans=\/en\/([a-z]+)/);
     if (match) {
         langSelect.value = match[1];
@@ -64,6 +70,5 @@ document.addEventListener('DOMContentLoaded', () => {
         location.reload();
     });
 
-    // Start suppressing the Google Translate banner
     watchForGoogleBanner();
 });

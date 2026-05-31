@@ -16,33 +16,20 @@
     color: #fff;
 }
 
-/* ── Hide every Google Translate UI element ────────────────────────────────── */
+/* ── Hide Google Translate UI ────────────────────────────────────────────── */
 
-/* The banner bar ("Translated into: X | Show original") */
+/* Banner toolbar iframe */
 .goog-te-banner-frame,
-iframe.skiptranslate,
-iframe[name="google_translate_o"] {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    max-height: 0 !important;
-}
-
-/* The injected gadget container */
-.goog-te-gadget,
-#goog-gt-tt,
-.goog-te-balloon-frame {
+iframe.skiptranslate {
     display: none !important;
 }
 
-/* Google shifts body down when it shows the banner — undo that */
+/* Gadget container */
+.goog-te-gadget {
+    display: none !important;
+}
+
+/* Undo Google's body offset — do NOT set position:static (breaks fixed nav) */
 body {
     top: 0 !important;
-    position: static !important;
-}
-
-/* Hide Google's logo tooltip on translated text */
-.goog-te-spinner-pos,
-.goog-te-highlight {
-    display: none !important;
 }
