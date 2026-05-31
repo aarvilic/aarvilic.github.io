@@ -1,0 +1,16 @@
+#google_translate_element select {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#google_translate_element select option {
+    background: #333;
+    color: #fff;
+}
