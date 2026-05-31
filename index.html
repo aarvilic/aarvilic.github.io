@@ -33,7 +33,19 @@
     <script src="js/ui-components.js" defer></script>
     <script src="js/policy-finder.js" defer></script>
     <script src="js/translator.js" defer></script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'te,hi',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -65,9 +77,14 @@
                 <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                <select id="page-lang" class="language-switcher">
+                    <option value="">🌐 Select Language</option>
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
+                </select>
             </div>
-            <div id="google_translate_element"></div>
         </div>
+        <div id="google_translate_element" style="display:none;"></div>
     </header>
 
     <!-- PREMIUM HERO SLIDESHOW -->
