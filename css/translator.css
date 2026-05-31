@@ -16,12 +16,33 @@
     color: #fff;
 }
 
-/* Hide Google’s default banner and dropdown */
-.goog-te-banner-frame.skiptranslate,
-.goog-te-gadget {
+/* ── Hide every Google Translate UI element ────────────────────────────────── */
+
+/* The banner bar ("Translated into: X | Show original") */
+.goog-te-banner-frame,
+iframe.skiptranslate,
+iframe[name="google_translate_o"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    max-height: 0 !important;
+}
+
+/* The injected gadget container */
+.goog-te-gadget,
+#goog-gt-tt,
+.goog-te-balloon-frame {
     display: none !important;
 }
 
+/* Google shifts body down when it shows the banner — undo that */
 body {
-    top: 0px !important;
+    top: 0 !important;
+    position: static !important;
+}
+
+/* Hide Google's logo tooltip on translated text */
+.goog-te-spinner-pos,
+.goog-te-highlight {
+    display: none !important;
 }
