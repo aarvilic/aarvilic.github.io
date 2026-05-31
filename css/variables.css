@@ -1,0 +1,42 @@
+/* ==========================================================================
+   DESIGN TOKENS & VARIABLES
+   ========================================================================== */
+
+:root {
+    /* Dark Theme Base (Default) */
+    --bg-primary: #0b0f19;
+    --bg-secondary: #131c30;
+    --bg-tertiary: #1b2640;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --primary-color: #0066cc;
+    --primary-accent: #e40285;
+    /* Beautiful Original Brand Pink */
+    --gold-accent: #eab308;
+    --success-color: #10b981;
+    --star-health-color: #00cccc;
+    /* Bright Premium Teal for dark mode */
+    --glass-bg: rgba(19, 28, 48, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --transition-speed: 0.3s;
+    --border-radius: 16px;
+}
+
+[data-theme="light"] {
+    /* Light Theme Base */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --primary-color: #0252e3;
+    --primary-accent: #d00174;
+    --gold-accent: #d97706;
+    --success-color: #059669;
+    --star-health-color: #008080;
+    /* Premium Medical Teal for light mode */
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(15, 23, 42, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+}
